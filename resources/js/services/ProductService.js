@@ -10,7 +10,7 @@ Vue.use(Vuetify);
 import VueAxios from 'vue-axios';
 import axios from 'axios';
 
-import UserTable from '../components/UserTable.vue';
+import UserTable from '../components/ProductTable.vue';
 
 Vue.config.productionTip = false;
 
