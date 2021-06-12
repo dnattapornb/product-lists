@@ -10,7 +10,7 @@ Vue.use(Vuetify);
 import VueAxios from 'vue-axios';
 import axios from 'axios';
 
-import UserTable from '../components/ProductTable.vue';
+import ProductTable from '../components/ProductTable.vue';
 
 Vue.config.productionTip = false;
 
@@ -32,6 +32,6 @@ Vue.filter('uppercase', function (value) {
 new Vue({
     vuetify: Vuetify,
     el: '#app',
-    components: {UserTable},
-    template: '<UserTable/>',
+    components: {ProductTable},
+    template: '<ProductTable/>',
 });

@@ -13,5 +13,5 @@
 <!-- Your code here -->
 </body>
 
-<script type="application/javascript" src="{{ asset('js/UserService.js') }}"></script>
+<script type="application/javascript" src="{{ asset('js/ProductService.js') }}"></script>
 </html>
