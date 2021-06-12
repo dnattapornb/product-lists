@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/product', function ()
+{
+    return view('product/index');
+})->name('user');
