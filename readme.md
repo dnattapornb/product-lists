@@ -36,6 +36,40 @@ php artisan db:seed
 php artisan config:cache
 ```
 
+## Laravel Excel
+[https://docs.laravel-excel.com/3.1/getting-started/](https://docs.laravel-excel.com/3.1/getting-started/)
+[https://github.com/Maatwebsite/Laravel-Excel](https://github.com/Maatwebsite/Laravel-Excel)
+```bash
+composer require maatwebsite/excel
+```
+> ServiceProvider in `config/app.php`:
+```php
+'providers' => [
+
+    //...
+
+    /*
+     * Package Service Providers...
+     */
+    Maatwebsite\Excel\ExcelServiceProvider::class,
+
+]
+```
+> Facade in `config/app.php`:
+```php
+'aliases' => [
+
+    //...
+
+    'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+
+]
+```
+> This will create a new config file named `config/excel.php`
+```php
+php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider" --tag=config
+```
+
 ## Docs
 [https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax)
 
